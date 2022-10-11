@@ -3,6 +3,7 @@ package EmployeeWage;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
+import java.util.Scanner;
 
 public class EmployeeWageSystem {
 
@@ -38,6 +39,7 @@ public class EmployeeWageSystem {
         System.out.println("Daily salary of the employee is: ");
         empWage = wagePerHr * fullDayHr;
         System.out.println(empWage);
+        EmpMonthWage();
     }
 
     public static void partTime() {
@@ -48,10 +50,46 @@ public class EmployeeWageSystem {
         System.out.println("Daily salary of the employee is: ");
         empWage = wagePerHr * halfDayHr;
         System.out.println(empWage);
+        EmpMonthWage();
     }
 
     public static void quit() {
         System.out.println("Exiting from Employee Wage System");
         System.exit(0);
+    }
+
+    public static void EmpMonthWage() {
+        System.out.println("Whether Employee present Full Time or Part Time?");
+        Scanner sc = new Scanner(System.in);
+        int empCheck = sc.nextInt();
+        int isFullTime = 1;
+        int isPartTime = 2;
+        int day;
+        int wagePerHr = 20;
+        int fullDayHr = 8;
+        int halfDayHr = 4;
+        int salary, empWage = 0;
+
+        switch(empCheck) {
+            case 1:
+                System.out.println("Employee is present for Full Time in Month");
+                for(day=1;day<=20;day++) {
+                    salary = wagePerHr * fullDayHr * day;
+                    empWage = empCheck + salary;
+                    System.out.println("Monthly salary of employee is: "+empWage);
+                }
+                break;
+            case 2:
+                System.out.println("Employee is present for Part Time in Month");
+                for(day=1;day<=20;day++) {
+                    salary = wagePerHr * halfDayHr * day;
+                    empWage = empCheck + salary;
+                    System.out.println("Monthly salary of employee is: "+empWage);
+                }
+                break;
+            default:
+                System.out.println("Invalid Input");
+                break;
+        }
     }
 }
