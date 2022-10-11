@@ -111,4 +111,9 @@ public class EmployeeWageSystem {
         else
             System.out.println("Invalid Working Hour");
     }
+
+    public static void multiCompany() {
+        MultipleCompany.EmpWage();
+
+    }
 }
