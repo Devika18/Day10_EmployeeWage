@@ -8,6 +8,7 @@ public class EmployeeWageMain {
 
     public static void main(String[] args) {
         System.out.println("Welcome to Employee Wage Computation Program");
+        System.out.println("****************************************************************");
         EmployeeWageSystem.EmployeeCheck();
         menu();
     }
@@ -16,9 +17,10 @@ public class EmployeeWageMain {
         Scanner sc = new Scanner(System.in);
 
         while(true) {
+            System.out.println("****************************************************************");
             System.out.println("Which option do you want to select?");
-            System.out.println("1. Employee salary of Full Time");
-            System.out.println("2. Employee salary of Part Time");
+            System.out.println("1. Full Time Employee salary");
+            System.out.println("2. Part Time Employee salary");
             System.out.println("3. Exit");
 
             //Using switch case control statement

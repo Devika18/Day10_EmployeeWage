@@ -59,6 +59,7 @@ public class EmployeeWageSystem {
     }
 
     public static void EmpMonthWage() {
+        System.out.println("****************************************************************");
         System.out.println("Whether Employee present Full Time or Part Time?");
         Scanner sc = new Scanner(System.in);
         int empCheck = sc.nextInt();
@@ -78,6 +79,7 @@ public class EmployeeWageSystem {
                     empWage = empCheck + salary;
                     System.out.println("Monthly salary of employee is: "+empWage);
                 }
+                WorkingHour();
                 break;
             case 2:
                 System.out.println("Employee is present for Part Time in Month");
@@ -86,10 +88,27 @@ public class EmployeeWageSystem {
                     empWage = empCheck + salary;
                     System.out.println("Monthly salary of employee is: "+empWage);
                 }
+                WorkingHour();
                 break;
             default:
                 System.out.println("Invalid Input");
                 break;
         }
+    }
+
+    public static void WorkingHour() {
+        System.out.println("****************************************************************");
+        System.out.println("Enter working hour of the employee");
+        Scanner sc = new Scanner(System.in);
+        int totalWorkingHr = sc.nextInt();
+        int wagePerHr = 20, empWage = 0, day = 20;
+        int salary;
+        if(totalWorkingHr <= 100) {
+            salary = wagePerHr * day * totalWorkingHr;
+            empWage = empWage + salary;
+            System.out.println("Salary of Employee as per total working hour is: "+empWage);
+        }
+        else
+            System.out.println("Invalid Working Hour");
     }
 }
