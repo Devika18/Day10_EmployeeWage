@@ -21,6 +21,7 @@ public class EmployeeWageMain {
             System.out.println("2. Employee salary of Part Time");
             System.out.println("3. Exit");
 
+            //Using switch case control statement
             int choice = sc.nextInt();
             EmployeeWageSystem emp = new EmployeeWageSystem();
             switch(choice) {
