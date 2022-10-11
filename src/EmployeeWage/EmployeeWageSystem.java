@@ -16,12 +16,17 @@ public class EmployeeWageSystem {
 
         if(isPresent >= 1) {
             System.out.println("Employee is Present");
+            DailyEmployeeWage();
         }
         else
             System.out.println("Employee is Absent");
     }
-
-
-
-
+    public static void DailyEmployeeWage() {
+        int wagePerHr = 20;
+        int fullDayHr = 8;
+        int empWage;
+        System.out.println("Daily salary of the employee is: ");
+        empWage = wagePerHr * fullDayHr;
+        System.out.println(empWage);
+    }
 }
