@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class EmployeeWageSystem {
 
-    public static List<Company> dataBase = new ArrayList<>();
+    public static List<MultipleCompany> dataBase = new ArrayList<>();
 
     public static void EmployeeCheck() {
         System.out.println("Checking Employee is present or not");

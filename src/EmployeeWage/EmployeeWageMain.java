@@ -11,6 +11,13 @@ public class EmployeeWageMain {
         System.out.println("****************************************************************");
         EmployeeWageSystem.EmployeeCheck();
         menu();
+        MultipleCompany.EmpWage("Google", 20,100,20);
+        MultipleCompany.EmpWage("Whirlpool", 10, 150, 15);
+        MultipleCompany.EmpWage("TCS", 15, 125, 22);
+        MultipleCompany.EmpWage("Accenture", 20,100,20);
+        MultipleCompany.EmpWage("Capgemini", 10, 150, 15);
+        MultipleCompany.EmpWage("Wipro", 15, 125, 22);
+
     }
 
     public static void menu() {
