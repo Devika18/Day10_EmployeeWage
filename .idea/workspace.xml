@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5fb3176-843f-42ad-bb0d-b1b19db660c8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/EmployeeWage/Companies.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EmployeeWage/MultipleCompanyEmployeeWage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EmployeeWage/EmployeeWageMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EmployeeWage/EmployeeWageMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/EmployeeWage/EmployeeWageSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EmployeeWage/EmployeeWageSystem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/EmployeeWage/MultipleCompany.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EmployeeWage/MultipleCompany.java" afterDir="false" />
     </list>

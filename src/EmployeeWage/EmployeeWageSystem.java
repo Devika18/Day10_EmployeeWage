@@ -1,14 +1,12 @@
 package EmployeeWage;
 
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
 
 public class EmployeeWageSystem {
-
-    public static List<MultipleCompany> dataBase = new ArrayList<>();
-
     public static void EmployeeCheck() {
         System.out.println("Checking Employee is present or not");
         Random random = new Random();
@@ -52,12 +50,14 @@ public class EmployeeWageSystem {
         System.out.println(empWage);
         EmpMonthWage();
     }
+    public static void multiCompany() {
+        MultipleCompany.EmpWage();
 
+    }
     public static void quit() {
         System.out.println("Exiting from Employee Wage System");
         System.exit(0);
     }
-
     public static void EmpMonthWage() {
         System.out.println("****************************************************************");
         System.out.println("Whether Employee present Full Time or Part Time?");
@@ -110,10 +110,5 @@ public class EmployeeWageSystem {
         }
         else
             System.out.println("Invalid Working Hour");
-    }
-
-    public static void multiCompany() {
-        MultipleCompany.EmpWage();
-
     }
 }
