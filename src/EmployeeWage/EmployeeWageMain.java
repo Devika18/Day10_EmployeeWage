@@ -9,6 +9,11 @@ public class EmployeeWageMain {
     public static void main(String[] args) {
         System.out.println("Welcome to Employee Wage Computation Program");
         System.out.println("****************************************************************");
+        ManageEmployeeWage empWageComputation = new ManageEmployeeWage(3);
+        empWageComputation.addCompany("Microsoft", 4, 20, 100);
+        empWageComputation.addCompany("Google", 5, 35, 120);
+        empWageComputation.addCompany("Apple", 9, 15, 50);
+        empWageComputation.calculateTotalWage();
         EmployeeWageSystem.EmployeeCheck();
         menu();
     }
