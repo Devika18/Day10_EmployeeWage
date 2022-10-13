@@ -1,5 +1,6 @@
 package EmployeeWage;
 import java.util.ArrayList;
+import java.util.HashMap;
 
 interface IManageWageArrayList
 {
@@ -49,10 +50,12 @@ public class ManageWageArrayList implements IManageWageArrayList {
     public static final int FULL_TIME = 2;
     // instance variables
     ArrayList<CompanyEmpWageDetails> companies;
+    HashMap<String, Integer> totalEmpWage;
 
     public ManageWageArrayList()
     {
         companies = new ArrayList<>();
+        totalEmpWage = new HashMap<>();
     }
 
     public void addCompanyDetails(String companyName, int wagePerHr, int maxWorkingDays, int maxWorkingHrs)
@@ -107,5 +110,12 @@ public class ManageWageArrayList implements IManageWageArrayList {
         }
         return totalWage;
     }
-
+    void printTotalEmpWage()
+    {
+        System.out.println("The Companies and their total Employee Wages are:");
+        for (String companyName : totalEmpWage.keySet())
+        {
+            System.out.println(companyName + ": " + totalEmpWage.get(companyName));
+        }
+    }
 }

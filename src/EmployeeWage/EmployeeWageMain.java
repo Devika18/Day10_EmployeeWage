@@ -20,6 +20,7 @@ public class EmployeeWageMain {
         empWageList.addCompanyDetails("Google", 5, 35, 120);
         empWageList.addCompanyDetails("Apple", 9, 15, 50);
         empWageList.calculateTotalEmpWage();
+        empWageList.printTotalEmpWage();
 
         EmployeeWageSystem.EmployeeCheck();
         menu();
