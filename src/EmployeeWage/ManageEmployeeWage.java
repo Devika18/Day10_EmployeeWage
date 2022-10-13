@@ -1,4 +1,11 @@
 package EmployeeWage;
+interface IManageEmployeeWage
+{
+    public void addCompany(String companyName, int wagePerHr, int maxWorkingDays, int maxWorkingHrs);
+
+    public void calculateTotalWage();
+}
+
 
 class CompanyEmpWage
 {
@@ -21,6 +28,7 @@ class CompanyEmpWage
 
     void setTotalEmployeeWage(int totalEmpWage)
     {
+
         this.totalEmpWage = totalEmpWage;
     }
 
@@ -35,7 +43,7 @@ class CompanyEmpWage
     }
 }
 
-public class ManageEmployeeWage {
+public class ManageEmployeeWage implements IManageEmployeeWage {
     public static final int PART_TIME = 1;
     public static final int FULL_TIME = 2;
     // instance variables
@@ -49,13 +57,14 @@ public class ManageEmployeeWage {
         index = 0;
     }
 
-    void addCompany(String companyName, int wagePerHr, int maxWorkingDays, int maxWorkingHrs)
+    public void addCompany(String companyName, int wagePerHr, int maxWorkingDays, int maxWorkingHrs)
     {
         companies[index++] = new CompanyEmpWage(companyName, wagePerHr, maxWorkingDays, maxWorkingHrs);
     }
 
     int generateEmployeeType()
     {
+
         return (int) (Math.random() * 100) % 3;
     }
 
@@ -72,7 +81,7 @@ public class ManageEmployeeWage {
         }
     }
 
-    void calculateTotalWage()
+    public void calculateTotalWage()
     {
         for (CompanyEmpWage company : companies)
         {
