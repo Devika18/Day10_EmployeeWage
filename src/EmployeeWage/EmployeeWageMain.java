@@ -21,6 +21,9 @@ public class EmployeeWageMain {
         empWageList.addCompanyDetails("Apple", 9, 15, 50);
         empWageList.calculateTotalEmpWage();
         empWageList.printTotalEmpWage();
+        String query = "Google";
+        int totalWage = empWageList.getTotalEmpWage(query);
+        System.out.println("Total Employee Wage for " + query + " company is " + totalWage);
 
         EmployeeWageSystem.EmployeeCheck();
         menu();

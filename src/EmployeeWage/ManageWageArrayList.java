@@ -7,6 +7,7 @@ interface IManageWageArrayList
     public void addCompanyDetails(String companyName, int wagePerHr, int maxWorkingDays, int maxWorkingHrs);
 
     public void calculateTotalEmpWage();
+    public int getTotalEmpWage(String companyName);
 }
 
 class CompanyEmpWageDetails
@@ -62,6 +63,7 @@ public class ManageWageArrayList implements IManageWageArrayList {
     {
         CompanyEmpWageDetails company = new CompanyEmpWageDetails(companyName, wagePerHr, maxWorkingDays, maxWorkingHrs);
         companies.add(company);
+        totalEmpWage.put(companyName, 0);
     }
 
     int generateEmployeeType()
@@ -117,5 +119,9 @@ public class ManageWageArrayList implements IManageWageArrayList {
         {
             System.out.println(companyName + ": " + totalEmpWage.get(companyName));
         }
+    }
+    public int getTotalEmpWage(String companyName)
+    {
+        return totalEmpWage.get(companyName);
     }
 }
