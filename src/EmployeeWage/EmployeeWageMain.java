@@ -14,6 +14,13 @@ public class EmployeeWageMain {
         empWageComputation.addCompany("Google", 5, 35, 120);
         empWageComputation.addCompany("Apple", 9, 15, 50);
         empWageComputation.calculateTotalWage();
+        System.out.println("****************************************************************");
+        ManageWageArrayList empWageList = new ManageWageArrayList();
+        empWageList.addCompanyDetails("Microsoft", 4, 20, 100);
+        empWageList.addCompanyDetails("Google", 5, 35, 120);
+        empWageList.addCompanyDetails("Apple", 9, 15, 50);
+        empWageList.calculateTotalEmpWage();
+
         EmployeeWageSystem.EmployeeCheck();
         menu();
     }

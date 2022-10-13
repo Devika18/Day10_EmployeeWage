@@ -110,3 +110,4 @@ public class ManageEmployeeWage implements IManageEmployeeWage {
         return totalWage;
     }
 }
+
